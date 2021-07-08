@@ -2,7 +2,7 @@
 [![Swift Version][swift-image]][swift-url]
 [![Build Status][bitrise-image]][bitrise-url]
 [![License][license-image]][license-url]
-[![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
+![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)
 
 # RGBBullsEye
 Simple iOS game built with SwiftUI, the player has to adjust the sliders to match the color randomly chosen by the app.
