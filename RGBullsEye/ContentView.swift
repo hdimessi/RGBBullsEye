@@ -69,6 +69,10 @@ struct ContentView: View {
                     ColorSlider(value: $bGuess, textColor: .blue)
                 }
                 .padding(.horizontal)
+                NavigationLink(destination: LegacyViewControllerRepresentation()) {
+                    Text("Present UIKit View Controller")
+                }
+                .padding(.bottom)
             }
         }
     }
@@ -85,17 +89,15 @@ struct ContentView_Previews: PreviewProvider {
 
 struct ColorSlider: View {
     @Binding var value: Double
-    var textColor: Color
+    var textColor: UIColor
     
     var body: some View {
         HStack {
             Text("0")
-                .foregroundColor(textColor)
-            Slider(value: $value)
-                .background(textColor)
-                .cornerRadius(10)
+                .foregroundColor(Color(textColor))
+            ColorUISlider(color: textColor, value: $value)
             Text("255")
-                .foregroundColor(textColor)
+                .foregroundColor(Color(textColor))
         }
     }
 }
